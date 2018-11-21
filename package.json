@@ -1,0 +1,26 @@
+{
+  "name": "react-training",
+  "version": "0.0.0",
+  "description": "Epam React Training course excercise",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+    "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pptthh/react-lerning.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "flux",
+    "epam",
+    "training"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pptthh/react-lerning/issues"
+  },
+  "homepage": "https://github.com/pptthh/react-lerning#readme"
+}
