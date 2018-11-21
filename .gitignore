@@ -1,0 +1,13 @@
+**/*.log
+**/*.tmp
+
+node_modules
+generated
+coverage
+debug
+prod
+
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
