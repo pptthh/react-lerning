@@ -6,7 +6,7 @@
   "scripts": {
     "test": "test"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/pptthh/react-lerning.git"
   },
@@ -22,5 +22,12 @@
   "bugs": {
     "url": "https://github.com/pptthh/react-lerning/issues"
   },
-  "homepage": "https://github.com/pptthh/react-lerning#readme"
+  "homepage": "https://github.com/pptthh/react-lerning#readme",
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  },
+  "devDependencies": {
+    "typescript": "^3.1.6"
+  }
 }
