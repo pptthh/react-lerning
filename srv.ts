@@ -31,50 +31,12 @@ app.use(express.static('prod'));
 app.use(express.static('debug'));
 app.use(express.static('public'));
 
-const mainPageRoutes: string[] = [];
-const createUrl = (url: string) => `GET: <a href='${url}' target='_self'>${url}</a>`
-
 app.get('/', (req, res) => {
-    res.send(
-        'Hello<br\><br\>\n'
-        + req.url +
-        '<br\><pre>'+ mainPageRoutes.map(createUrl).join('\n') + '<pre>' +
-        '<hr/><form action="/" method="get" enctype="multipart/form-data">'+
-        '<input id="textId" type="text" name="name">'+
-        '<input type="submit" value="Submit">'+
-        '</form>'+
-    '');
+    res.redirect('public/')
+    // res.send(
+    //     'Hello<br\><br\>\n' +
+    // '');
 });
-
-mainPageRoutes.push('/test')
-app.get('/test', (req, res) =>
-    res.json({noteArray:[
-        {note:'test data text 1', date: new Date()},
-        {note:'test data text 2', date: new Date()},
-        {note:'test data text 3', date: new Date()},
-        {note:'test data text 4', date: new Date()},
-    ]})
-);
-
-const noteArray: string[] = [];
-mainPageRoutes.push('/notes')
-app.get('/notes',
-    (req, res) => res.json({noteArray})
-);
-
-mainPageRoutes.push('/notes/add')
-app.get('/notes/add', (req, res) =>
-    res.json(
-        noteArray.unshift(req.query)
-    )
-);
-
-mainPageRoutes.push('/notes/delete')
-app.get('/notes/delete', (req, res) => 
-    res.json(
-        noteArray.splice(req.query.key, 1)
-    )
-);
 
 try{
     app.listen(PORT, () => console.log('Server started on port: ' + PORT));
