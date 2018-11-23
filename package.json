@@ -2,11 +2,12 @@
   "name": "react-training",
   "version": "0.0.0",
   "description": "Epam React Training course excercise",
-  "main": "index.js",
+  "main": "src/srv.ts",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "tsc": "tsc"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/pptthh/react-lerning.git"
   },
@@ -22,5 +23,13 @@
   "bugs": {
     "url": "https://github.com/pptthh/react-lerning/issues"
   },
-  "homepage": "https://github.com/pptthh/react-lerning#readme"
+  "homepage": "https://github.com/pptthh/react-lerning#readme",
+  "devDependencies": {
+    "express": "^4.16.4",
+    "typescript": "^3.1.6"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3"
+  }
 }
