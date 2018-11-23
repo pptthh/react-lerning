@@ -27,15 +27,11 @@ const app = express();
 app.use(logger)
 app.use((rq,rs,nx) => (rs.locals.errors = null, nx()));
 
-app.use(express.static('prod'));
 app.use(express.static('debug'));
 app.use(express.static('public'));
 
 app.get('/', (req, res) => {
     res.redirect('public/')
-    // res.send(
-    //     'Hello<br\><br\>\n' +
-    // '');
 });
 
 try{
