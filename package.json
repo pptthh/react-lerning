@@ -2,14 +2,14 @@
   "name": "react-training",
   "version": "0.0.0",
   "description": "Epam React Training course excercise",
-  "main": "srv.js",
+  "main": "debug/srv.js",
   "scripts": {
-    "compile": "tsc && node srv.js",
-    "start": "nodemon srv.js -e ts  --exec \"npm run compile\" || exit 1",
+    "compile": "tsc && node debug/srv.js",
+    "start": "nodemon debug/srv.js -e ts  --exec \"npm run compile\" || exit 1",
     "tsc": "tsc",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-    "repository": {
+  "repository": {
     "type": "git",
     "url": "git+https://github.com/pptthh/react-lerning.git"
   },

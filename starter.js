@@ -4,4 +4,4 @@
 require('babel-register')({ presets: [ 'env' ] });
 
 // Import the rest of our application.
-module.exports = require('./srv.js');
+module.exports = require('./debug/srv.js');
